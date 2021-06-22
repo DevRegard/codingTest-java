@@ -19,7 +19,7 @@ public class Budget {
 	
 	
 	
-	//오름차순 정렬 후 작은 수 부터 더해서 가장 최대의 값을 내며 예산 도출하는 [솔루션1]
+	// [솔루션1] 오름차순 정렬 후 작은 수 부터 더해서 가장 최대의 값을 내며 예산 도출한 방법
 	public int budget_1(int[] d, int budget) {
         int answer = 0;
         int result = 0;
@@ -42,7 +42,7 @@ public class Budget {
 	
 	
 	
-	//예산을 하나씩 빼고 0보다 작아지면 리턴 = 최댓값을 지나서 리턴 [솔루션2]
+	// [솔루션2] 예산을 하나씩 빼고 0보다 작아지면 리턴 = 최댓값을 지나서 리턴
 	public int budget_2(int[] d, int budget) {
 		int answer = 0;
 		Arrays.sort(d);
@@ -59,7 +59,7 @@ public class Budget {
 	
 	
 	
-	// ArrayList와 Collections을 활용한 [술루션3]
+	// [솔루션3] ArrayList와 Collections을 활용한 방법
 	public int budget_3(int[] d, int budget) {
 		int answer = 0;
 

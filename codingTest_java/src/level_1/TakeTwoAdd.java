@@ -24,7 +24,7 @@ public class TakeTwoAdd {
 	
 	
 	
-	// ArrayList를 활용하여 중복된 값을 허용을 감안한 [솔루션1]
+	// [솔루션1] ArrayList를 활용하여 중복된 값을 허용을 감안해서 구현한 방법
 	public int[] takeTwoAdd_1(int[] numbers) {
 		 ArrayList<Integer> list = new ArrayList<Integer>();
 	        
@@ -50,7 +50,7 @@ public class TakeTwoAdd {
 	
 	
 	
-	// HashSet, Set을 활용하여 중복된 값을 허용하지 않고 계산한 [솔루션2]
+	// [솔루션2] HashSet, Set을 활용하여 중복된 값을 허용하지 않고 계산한 방법
 	public int[] takeTwoAdd_2(int[] numbers) {
 		 Set<Integer> set = new HashSet<>();
 
@@ -75,7 +75,7 @@ public class TakeTwoAdd {
 	
 	
 	
-	// ArrayList,Collections,HashSet,Iterator를 동시 활용 및 리턴값 변경한 [솔루션3]
+	// [솔루션3] ArrayList,Collections,HashSet,Iterator를 동시 활용 및 리턴값 변경한 방법
 	 public static ArrayList<Integer> takeTwoAdd_3(int[] numbers) {
 		ArrayList<Integer> answer = new ArrayList<>();
         HashSet<Integer> set = new HashSet<>();

@@ -15,7 +15,7 @@ public class AdditionOfFactors {
 	
 	
 	
-	// '약수를 담을 변수 temp' 를 1로 하고, 약수의 개수를 판별하며 계산한 [솔루션1]
+	// [솔루션1] 약수를 담을 변수=temp 를 1로 하고, 약수의 개수를 판별하며 계산한 방법
 	public int additionOfFactors_1(int left, int right) {
 		// 1.
         int answer = 0;
@@ -39,7 +39,7 @@ public class AdditionOfFactors {
 	
 	
 	
-	// 약수를 담을 변수를 0으로 하고 계산한 [솔루션2]
+	// [솔루션2] 약수를 담을 변수를 0으로 하고 계산한 방법
 	public int additionOfFactors_2(int left, int right) {
 		int answer = 0, count = 0; // 정답 변수, 약수를 카운트할 변수
         for(int i = left; i <= right; i++) { // left에서 right까지 반복
@@ -56,7 +56,7 @@ public class AdditionOfFactors {
 	
 	
 	
-	// 클래스 Math를 활용한 [솔루션3]
+	// [솔루션3] 클래스 Math를 활용한 방법
 	public int additionOfFactors_3(int left, int right) {
 		int answer = 0;
         int s = (int)Math.ceil(Math.sqrt(left));
