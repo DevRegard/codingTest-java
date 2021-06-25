@@ -3,7 +3,7 @@ package level_1;
 import java.util.Stack;
 
 /**
- * @codingTest <[1차] 다트 게임>
+ * @codingTest <Problems> [1차] 다트 게임
  *
  */
 public class DartGame_1st {
