@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * @codingTest <Problems> 같은 숫자는 싫어 [1-22]
+ * @codingTest <Problems> 같은 숫자는 싫어
  *	
  *	stream() :
  *
