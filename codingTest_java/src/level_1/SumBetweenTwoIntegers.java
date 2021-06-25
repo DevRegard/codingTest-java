@@ -1,7 +1,7 @@
 package level_1;
 
 /**
- * @codingTest <Problems> 두 정수 사이의 합
+ * @codingTest <Problems> 두 정수 사이의 합 [1-24]
  *
  */
 public class SumBetweenTwoIntegers {

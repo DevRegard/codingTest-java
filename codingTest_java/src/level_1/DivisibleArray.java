@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * @codingTest <Problems> 나누어 떨어지는 숫자 배열
+ * @codingTest <Problems> 나누어 떨어지는 숫자 배열 [1-23]
  *
  *	isEmpty() : 비어있는가?
  *	Arrays.stream() : 
