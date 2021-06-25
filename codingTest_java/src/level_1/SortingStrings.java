@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * @codingTest <Problems> 문자열 내 마음대로 정렬하기
+ * @codingTest <Problems> 문자열 내 마음대로 정렬하기 [1-25]
  *
  *	charAt() : 특정 문자열의 위치하는 유니코드 단일문자를 반환
  *	Comparator : Object를 매개변수로 받아서 비교

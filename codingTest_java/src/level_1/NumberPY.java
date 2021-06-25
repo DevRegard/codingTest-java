@@ -1,7 +1,7 @@
 package level_1;
 
 /**
- * @codingTest <Problems> 문자열 내 p와 y의 개수
+ * @codingTest <Problems> 문자열 내 p와 y의 개수 [1-26]
  *
  *	toUpperCase() : 대상 문자열을 모두 대문자로 변환
  */
