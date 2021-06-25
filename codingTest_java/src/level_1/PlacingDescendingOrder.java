@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * @codingTest <Problems> 문자열 내림차순으로 배치하기
+ * @codingTest <Problems> 문자열 내림차순으로 배치하기 [1-27]
  *
  *	toCharArray() : String(문자열)을 char형 배열로 바꾼다.
  *	StringBuilder() : 변경가능하지만 동가화가 적용되지 않는다. 멀티스레드환경에선 값 변경 못함 -> 속도는 비교적 조금 빠름
