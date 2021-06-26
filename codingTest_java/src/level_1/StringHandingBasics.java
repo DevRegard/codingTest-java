@@ -18,7 +18,7 @@ public class StringHandingBasics {
 	
 	
 	
-	// [솔루션1] 정규식표현을 사용한 방법, matches()
+	// [솔루션1] 정규식표현을 사용한 방법, matches("정규표현식")
 	public boolean stringHandingBasics_1(String s) {
 		 if (s.length() == 4 || s.length() == 6) return s.matches("(^[0-9]*$)");
 	        return false;
