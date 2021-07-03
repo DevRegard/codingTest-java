@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 import java.util.stream.Stream;
 
 /**
- * @codingTest <Problems> 오픈채팅방 [2-4]
+ * @codingTest <Problems> 오픈채팅방 [2-3]
  *
  *	HashMap : Map 인터페이스를 구현한 대표적인 Map 컬렉션 -> 키는 중복X | 값은 중복O
  *	StringTokenizer : 문자열을 우리가 지정한 구분자로 문자열을 쪼개주는 클래스 -> Token : 쪼개어진 문자열
