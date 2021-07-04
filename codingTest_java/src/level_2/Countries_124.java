@@ -6,6 +6,47 @@ package level_2;
  */
 public class Countries_124 {
 
+	
+	public String countries_124(int n) {
+        String answer = "";
+        return answer;
+    }
+	
+	
+	
+	
+	
+	// [贾风记 1]
+	public String countries_124_1(int n) {
+		String answer = "";
+		return answer;
+	}
+	
+	
+	
+	
+	
+	// [贾风记 2]
+	public String countries_124_2(int n) {
+		String answer = "";
+		return answer;
+	}
+	
+	
+	
+	
+	
+	// [贾风记 3]
+	public String countries_124_3(int n) {
+		String answer = "";
+		return answer;
+	}
+	
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

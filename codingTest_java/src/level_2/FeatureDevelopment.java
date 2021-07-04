@@ -6,6 +6,47 @@ package level_2;
  */
 public class FeatureDevelopment {
 
+	
+	public int[] featureDevelopment_(int[] progresses, int[] speeds) {
+        int[] answer = {};
+        return answer;
+    }
+	
+	
+	
+	
+	
+	// [贾风记 1]
+	public int[] featureDevelopment_1(int[] progresses, int[] speeds) {
+		int[] answer = {};
+		return answer;
+	}
+	
+	
+	
+	
+	
+	// [贾风记 2]
+	public int[] featureDevelopment_2(int[] progresses, int[] speeds) {
+		int[] answer = {};
+		return answer;
+	}
+	
+	
+	
+	
+	
+	// [贾风记 3]
+	public int[] featureDevelopment_3(int[] progresses, int[] speeds) {
+		int[] answer = {};
+		return answer;
+	}
+	
+	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
