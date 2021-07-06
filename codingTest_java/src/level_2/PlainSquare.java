@@ -16,7 +16,7 @@ public class PlainSquare {
 	
 	
 	
-	
+	// [贾风记 1]
 	public long plainSquare_1(int w, int h) {
 		long answer = 1;
 		return answer;
@@ -26,7 +26,7 @@ public class PlainSquare {
 	
 	
 	
-	
+	// [贾风记 2]
 	public long plainSquare_2(int w, int h) {
 		long answer = 1;
 		return answer;
@@ -36,7 +36,7 @@ public class PlainSquare {
 	
 	
 	
-	
+	// [贾风记 3]
 	public long plainSquare_3(int w, int h) {
 		long answer = 1;
 		return answer;
