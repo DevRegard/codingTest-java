@@ -3,6 +3,7 @@ package level_2;
 /**
  * @codingTest <Problems> 멀쩡한 사각형 [2-7]
  *
+ *	 COMMIT TEST
  */
 public class PlainSquare {
 
