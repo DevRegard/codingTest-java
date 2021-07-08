@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 /**
- * @codingTest <예산>
+ * @codingTest <Problems> 예산 [1-16]
  *
  */
 public class Budget {
