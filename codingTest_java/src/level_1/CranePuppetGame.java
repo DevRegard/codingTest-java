@@ -5,39 +5,25 @@ import java.util.ArrayList;
 import java.util.Stack;
 	
 /**
- * @codingTest 크레인 인형뽑기 게임
- * 1. 바구니 역할을 해줄 stack를 준비하고, 0을 넣는다.
- * 2. moves의 길이 만큼 for문을 돌린다.
- * 3. answer을 리턴한다.
+ * @codingTest <Problems> 크레인 인형뽑기 게임 [1-2]
+ * 
+ * 	Stack : LIFO (설사,쓰레기통,마트용 음료수 진열대)
+ * 			한 쪽 끝에서만 자료(데이터)를 넣고 뺄 수 있는 형식의 자료 구조
+ * 			EX) 인터넷 브라우저의 '뒤로가기', '앞으로가기' 버튼 개발
  *
  */
 public class CranePuppetGame {
 	
 	public int craneGame(int[][] board, int[] moves) {
         int answer = 0;
-        
-        Stack<Integer> stack = new Stack<Integer>();
-        stack.push(0);
-        
-        for (int move : moves) {
-        	for (int j = 0; j < board.length; j++) {
-				if (board[j][move - 1] != 0) {
-					if (stack.peek() == board[j][move - 1]) {
-						stack.pop();
-						answer += 2;
-					} else {
-						stack.push(board[j][move - 1]);
-					}
-					board[j][move - 1] = 0;
-					break;
-				}
-			}
-        }
         return answer;
     }
 	
 	
 	
+	
+	
+	// [솔루션 1] Stack을 이용해서 해결한 방법
 	public int craneGame1(int[][] board, int[] moves) {
 		int answer = 0;
 		
@@ -64,6 +50,9 @@ public class CranePuppetGame {
 
 
 	
+	
+	
+	// [솔루션 2] List, ArrayList를 활용해서 해결한 방법
 	public int craneGame2(int[][] board, int[] moves) {
 		int answer = 0;
 		
@@ -94,6 +83,10 @@ public class CranePuppetGame {
 	}
 	
 	
+	
+	
+	
+	// [솔루션 3] Stack을 활용해서 해결한 2번째 방법
 	static Stack<Integer> stack = new Stack<>();
 	static int answer3 = 0;
 	
@@ -103,11 +96,10 @@ public class CranePuppetGame {
 			board = pick(board, idx - 1);
 		}
 		
-		
 		return answer3;
 	}
+
 	
-	//크레인 3번 사용
 	static int[][] pick(int[][] board, int idx) {
 		for (int i = 0; i < board.length; i++) {
 			if (board[i][idx] == 0) continue;
@@ -125,6 +117,10 @@ public class CranePuppetGame {
 		
 		return board;
 	}
+	
+	
+	
+	
 	
 	
 	public static void main(String[] args) {
