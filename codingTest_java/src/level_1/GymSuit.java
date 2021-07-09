@@ -3,42 +3,31 @@ package level_1;
 import java.util.HashSet;
 
 /**
- * @codingTest 체육복
- *	1. 안전빵으로 체육수업을 들을 수 있는 학생은 전체 학생수{n]에서 
- *	   lost배열의 길이(학생수)만큼 뺀 수 + 여벌을 가져왔는데 도둑맞은 사람 수
- *	2. 여분이 있는 학생의 값을 1씩 더하고, 뺀값이 lost배열에 있는가 검사
- *	3. 검사해서 참값이 나오면, 참값인 reserve 배열의 값을 -10으로 설정 (임의의 음수로 설정)
- *	4. 들을 수 있는 학생수 ++ 하고 다음 reserve 진행
+ * @codingTest <Problems> 체육복 [1-3]
+ * 
+ * 	HashSet : Set 인터페이스의 구현 클래스 (= Set성질 )
+ * 			  
+ * 
+ * 	Set : 객체를 중복해서 저장할 수 없고, 하나의 null값만 저장할 수 있다. 또한 저장 순서가 유지되지 않는다.
+ * 		  (순서가 보장되는 클래스는 LinkedHashSet)	
+ * 		  (= 주머니 형태, 비선형 구조-> 순서없고 인덱스 없다)		
+ *  
+ *  
+ * 	contains() : 대상 문자열에 특정 문자열이 포함되어 있는지 확인하는 클래스 (boolean값)
+ * 
  */
 public class GymSuit {
 
 	public int gymSuit(int n, int[] lost, int[] reserve) {
         int answer = n;
-        int[] people = new int[n];
-
-        for (int l : lost)
-			people[l-1]--;
-        
-        for (int r : reserve)
-			people[r-1]++;
-        
-        for (int i = 0; i < people.length; i++) {
-			if (people[i] == -1) {
-				if (i - 1 >= 0 && people[i-1] == 1) {
-					people[i]++;
-					people[i-1]--;
-				}else if (i + 1 < people.length && people[i+1] == 1) {
-					people[i]++;
-					people[i+1]--;
-				}else 
-					answer--;
-			}
-		}
         return answer;
     }
 	
 	
 	
+	
+	
+	// [솔루션 1]
 	public int gymSuit_1(int n, int[] lost, int[] reserve) {
 		int answer = n - lost.length; //잃어버린애들 전체 수에서 빼주기
 		
@@ -78,6 +67,9 @@ public class GymSuit {
 	
 	
 	
+	
+	
+	// [솔루션 2]  
 	public int gymSuit_2(int n, int[] lost, int[] reserve) {
 		int[] people = new int[n];
 		int answer = n;
@@ -105,6 +97,9 @@ public class GymSuit {
 	
 	
 	
+	
+	
+	// [솔루션 3][BEST] HashSet을 활용해서 해결한 방법
 	public int gymSuit_3(int n, int[] lost, int[] reserve) {
 		int answer = n - lost.length;
 		HashSet<Integer> ko = new HashSet<Integer>();
@@ -142,7 +137,9 @@ public class GymSuit {
 	
 	
 	
-	// 간결하지만 오답되는 답안
+	
+	
+	// [솔루션 4] 간결하지만 오답되는 답안 (일부만 정답)
 	/*
 	 * public int gymSuit_4(int n, int[] lost, int[] reserve) { int answer = n;
 	 * 
@@ -157,6 +154,10 @@ public class GymSuit {
 	 */
 	
 	
+	
+	
+	
+	
 	public static void main(String[] args) {
 		int n = 5;
 		int lost[] = {2,3};
@@ -164,10 +165,11 @@ public class GymSuit {
 		
 		//메서드 하나만 실행해야 에러 없이 테스트 가능
 		GymSuit gs = new GymSuit();
-		System.out.println(gs.gymSuit(n, lost, reserve));
-//		System.out.println(gs.gymSuit_1(n, lost, reserve)); //5
+//		System.out.println(gs.gymSuit(n, lost, reserve));
+		System.out.println(gs.gymSuit_1(n, lost, reserve)); //5
 //		System.out.println(gs.gymSuit_2(n, lost, reserve)); //5
 //		System.out.println(gs.gymSuit_3(n, lost, reserve)); //5
+		
 //		System.out.println(gs.gymSuit_4(n, lost, reserve)); // X
 		
 	}
