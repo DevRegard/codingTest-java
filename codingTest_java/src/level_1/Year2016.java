@@ -9,35 +9,16 @@ import java.util.Locale;
  *
  *	time.LocalDate	: 로컬 날짜 클래스, '날짜 정보'만 필요할 때 사용
  *
- *	util.Calendar	:
- *	util.Locale		:
+ *	util.Calendar	: 날짜와 시각에 관한 처리를 수행하는 클래스
+ *	util.Locale		: 지역의 언어, 나라 등의 정보를 담고 있는 클래스
  */
 public class Year2016 {
 	
 	
 	// [최고의 솔루션] 알고리즘 문제의 목적을 준수하면서 코드간결성과 가독성을 잘 표현한 코드
 	public String year2016(int a, int b) {
-		
 		String answer = "";
-		
-		int[] monthDay = {31,29,31,30,31,30,31,31,30,31,30,31};
-		
-		for (int i = 0; i < a; i++) { //a-1월 만큼 반복 
-			b += monthDay[i-1]; //절대일수 구하기
-		}
-		
-		switch (b % 7) {
-		case 3: answer = "SUN"; break;
-		case 4: answer = "MON"; break;
-		case 5: answer = "TUE"; break;
-		case 6: answer = "WED"; break;
-		case 0: answer = "THU"; break;
-		case 1: answer = "FRI"; break;
-		case 2: answer = "SAT"; break;
-		
-		}
 		return answer;
-		
 	}
 	
 	
@@ -87,6 +68,7 @@ public class Year2016 {
 	
 	
 	
+	// [BEST] 알고리즘 문제의 목적을 준수하면서 코드간결성과 가독성을 잘 표현한 코드
 	// [솔루션 3] switch문을 활용해서 간결하고 가독성 좋게 작성한 방법
 	public String year2016_3(int a, int b) {
 		String answer = " ";
@@ -146,7 +128,7 @@ public class Year2016 {
 	
 	public static void main(String[] args) {
 		Year2016 yy = new Year2016();
-		System.out.println(yy.year2016(5, 24));
+//		System.out.println(yy.year2016(5, 24));
 		System.out.println(yy.year2016_1(5, 24));
 		System.out.println(yy.year2016_2(5, 24));
 		System.out.println(yy.year2016_3(5, 24));
