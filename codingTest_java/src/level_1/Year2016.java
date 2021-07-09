@@ -5,11 +5,17 @@ import java.util.Calendar;
 import java.util.Locale;
 
 /**
- * @codingTest 2016년
+ * @codingTest <Problems> 2016년 [1-1]
  *
+ *	time.LocalDate	: 로컬 날짜 클래스, '날짜 정보'만 필요할 때 사용
+ *
+ *	util.Calendar	:
+ *	util.Locale		:
  */
 public class Year2016 {
 	
+	
+	// [최고의 솔루션] 알고리즘 문제의 목적을 준수하면서 코드간결성과 가독성을 잘 표현한 코드
 	public String year2016(int a, int b) {
 		
 		String answer = "";
@@ -35,6 +41,10 @@ public class Year2016 {
 	}
 	
 	
+	
+	
+	
+	// [솔루션 1]
 	public String year2016_1(int a, int b) {
 		String answer = "";
         
@@ -62,6 +72,9 @@ public class Year2016 {
 	
 	
 	
+	
+	
+	// [솔루션 2] Calendar,Locale 클래스를 활용한 방법
 	public String year2016_2(int month, int day) {
 		
 		Calendar cal = new Calendar.Builder().setCalendarType("iso8601")
@@ -72,15 +85,18 @@ public class Year2016 {
 	
 	
 	
+	
+	
+	// [솔루션 3] switch문을 활용해서 간결하고 가독성 좋게 작성한 방법
 	public String year2016_3(int a, int b) {
 		String answer = " ";
 		
 		int[] monthDay= {31,29,31,30,31,30,31,31,30,31,30,31};
-		for (int i = 1; i < a; i++) {
-			b += monthDay[i-1];
+		for (int i = 1; i < a; i++) { //a-1월 만큼 반복 
+			b += monthDay[i-1]; //절대일수 구하기
 		}
 		
-		switch (b % 7) {
+		switch (b % 7) { // 절댓값에서 7 나누기
 		case 3 : answer = "SUN"; break;
 		case 4 : answer = "MON"; break;
 		case 5 : answer = "TUE"; break;
@@ -95,6 +111,9 @@ public class Year2016 {
 	
 	
 	
+	
+	
+	// [솔루션 4] LocalDate 클래스와 메서드를 활용한 방법
 	public String year2016_4(int a, int b) {
 			
 		return LocalDate.of(2016, a, b).getDayOfWeek().toString().substring(0,3);
@@ -102,6 +121,9 @@ public class Year2016 {
 	
 	
 	
+	
+	
+	// [솔루션 5]  
 	public String year2016_5(int a, int b) {
 		String answer = "";
 		
