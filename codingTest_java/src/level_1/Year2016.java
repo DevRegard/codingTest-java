@@ -15,7 +15,6 @@ import java.util.Locale;
 public class Year2016 {
 	
 	
-	// [최고의 솔루션] 알고리즘 문제의 목적을 준수하면서 코드간결성과 가독성을 잘 표현한 코드
 	public String year2016(int a, int b) {
 		String answer = "";
 		return answer;

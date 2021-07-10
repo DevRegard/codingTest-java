@@ -22,7 +22,7 @@ public class CranePuppetGame {
 	
 	
 	
-	
+	// [BEST]
 	// [솔루션 1] Stack을 이용해서 해결한 방법
 	public int craneGame1(int[][] board, int[] moves) {
 		int answer = 0;

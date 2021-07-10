@@ -1,7 +1,7 @@
 package level_1;
 
 /**
- * @codingTest 내적
+ * @codingTest <Problems> 내적 [1-5]
  * a,b 배열의 동일한 인덱스의 요소를 더하고 그 값들을 더해준다.
  */
 public class DotProduct {

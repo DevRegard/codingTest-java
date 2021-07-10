@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * @codingTest 모의고사
+ * @codingTest <Problems> 모의고사 [1-4]
  *	1. 수포자들이 답을 찍는 패턴이 담긴 배열과 수포자들의 정답을 저장할 배열(scores)를 생성
  *	2. 수포자들의 답과 실제 답을 비교해 맞은 개수를 배열(scores)에 저장
  *	3. scores배열을 새로운 배열인 arr로 복사
