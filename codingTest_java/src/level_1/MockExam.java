@@ -6,6 +6,7 @@ import java.util.Arrays;
 
 /**
  * @codingTest <Problems> 모의고사 [1-4]
+ * 
  *	1. 수포자들이 답을 찍는 패턴이 담긴 배열과 수포자들의 정답을 저장할 배열(scores)를 생성
  *	2. 수포자들의 답과 실제 답을 비교해 맞은 개수를 배열(scores)에 저장
  *	3. scores배열을 새로운 배열인 arr로 복사
@@ -16,29 +17,17 @@ import java.util.Arrays;
 
 public class MockExam {
 
+	
 	public int[] mockExam(int[] answers) {
-		int[] a = {1, 2, 3, 4, 5};
-        int[] b = {2, 1, 2, 3, 2, 4, 2, 5};
-        int[] c = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
-		int[] score = new int[3];
-		for (int i = 0; i < answers.length; i++) {
-			if(answers[i] == a[i % a.length]) score[0]++;
-			if(answers[i] == b[i % b.length]) score[1]++;
-			if(answers[i] == c[i % c.length]) score[2]++;
-		}
-		
-		int maxScore = Math.max(score[0], Math.max(score[1], score[2]));
-		ArrayList<Integer> list = new ArrayList<>();
-		if(maxScore == score[0]) list.add(1);
-		if(maxScore == score[1]) list.add(2);
-		if(maxScore == score[2]) list.add(3);
-
-		return list.stream().mapToInt(i->i.intValue()).toArray();
+		int[] answer = {};
+        return answer;
 	}
 	
 	
 	
 	
+	
+	// [솔루션 1]
 	public int[] mockExam_1(int[] answers) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
@@ -78,6 +67,8 @@ public class MockExam {
 	
 	
 	
+	
+	// [솔루션 2]
 	public int[] mockExam_2(int[] answers) {
 		int[] answer = {};
 		
@@ -103,6 +94,8 @@ public class MockExam {
 	
 	
 	
+	
+	// [솔루션 3]
 	public int[] mockExam_3(int[] answers) {
 		int[][] patterns = {
 				{1, 2, 3, 4, 5},
@@ -130,6 +123,8 @@ public class MockExam {
 		
 		return answer;
 	}
+	
+	
 	
 	
 	
