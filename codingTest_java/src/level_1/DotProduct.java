@@ -2,9 +2,10 @@ package level_1;
 
 /**
  * @codingTest <Problems> 내적 [1-5]
- * a,b 배열의 동일한 인덱스의 요소를 더하고 그 값들을 더해준다.
+ * 	POINT -> a,b 배열의 동일한 인덱스의 요소를 더하고 그 값들을 더해준다.
  */
 public class DotProduct {
+	
 	
 	public int dotProduct(int[] a, int[] b) {
         int answer = 0;
@@ -17,6 +18,8 @@ public class DotProduct {
 	
 
 	
+	
+	// [솔루션 1]
 	public int dotProduct_1(int[] a, int[] b) {
 		int answer = 0;
 		for (int i = 0; i < a.length; i++) {
@@ -28,6 +31,8 @@ public class DotProduct {
 	
 	
 	
+	
+	// [솔루션 2]
 	public int dotProduct_2(int[] a, int[] b) {
 		int total = 0;
 		
@@ -42,6 +47,8 @@ public class DotProduct {
 	
 	
 	
+	
+	// [솔루션 3]
 	public int dotProduct_3(int[] a, int[] b) {
 		int answer = dotProductFv(a,b);
 		return answer;
@@ -56,6 +63,9 @@ public class DotProduct {
 		}
 		return dp;
 	}
+	
+	
+	
 	
 	
 	
