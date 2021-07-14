@@ -5,13 +5,22 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @codingTest <실패율>
+ * @codingTest <Problems> 실패율 [1-15]
  *	머물러있거나 도달하지 못한 사람 수 / 이미 클리어한 수
  */
 public class FailureRate {
 	
 	
-	//ArrayList, Collections 활용한 솔루션
+	public int[] failureRate(int N, int[] stages) {
+		int[] answer = {};
+		return answer;
+	}
+	
+	
+	
+	
+	
+	// [솔루션 1] ArrayList, Collections 활용해서 해결한 방법
 	public int[] failureRate_1(int N, int[] stages) {
 		int[] answer = new int[N];
 
@@ -93,7 +102,8 @@ public class FailureRate {
 	
 	
 	
-	//ArrayList, Collections, List 까지 활용한 솔루션
+	
+	// [솔루션 2] ArrayList, Collections, List 까지 활용한 방법
 	public int[] failureRate_2(int N, int[] lastStages) {
 		int nPlayers = lastStages.length;
         int[] nStagePlayers = new int[N + 2];
@@ -144,7 +154,8 @@ public class FailureRate {
 	
 	
 	
-	// import를 사용하지 않고, 직관성과 성능을 잡은 솔루션
+	    
+	// [솔루션 3] 라이브러리를 사용하지 않고, 코드 간결성과 성능을 까지 잡은 방법
 	public int[] failureRate_3(int N, int[] stages) {
 		int[] answer = new int[N];
         double[] tempArr = new double[N];
@@ -183,12 +194,6 @@ public class FailureRate {
 	}
 	
 	
-	
-	
-	public int[] failureRate(int N, int[] stages) {
-		int[] answer = {};
-		return answer;
-	}
 	
 	
 	
